@@ -1,4 +1,4 @@
 
-$("#high-bid").val("<%= j render @bid %>")
+$("#high-bid").val("<%= @bid.amount %>")
 $("#new-bid").val(parseInt(document.getElementById("high-bid").value) +10)
 
