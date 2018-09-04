@@ -24,9 +24,9 @@
   </p>
 
   <h3>Highest bid</h3>
-  <div id="new-bid">
-    $<%= text_field_tag nil, @item.highest_bid_amount, disabled: true %>
-  </div>
+ 
+    $<%= text_field_tag "high-bid", @item.highest_bid_amount, disabled: true %>
+ 
   
   <h3>Your bid</h3>
 
