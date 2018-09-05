@@ -2,7 +2,6 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   def index
-    respond_to :js, :html
     @items = Item.all
   end
 
@@ -25,6 +24,10 @@ class ItemsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def update_changes
+    @items = Item.all
   end
 
   def update
